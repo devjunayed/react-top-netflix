@@ -1,13 +1,98 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    background-color: blueviolet;
+    text-align: center;
+    padding: 20px 0px;
+    color: white;
+}
+.container{
+    display: 100%;
+}
+.cards{
+    padding: 40px 0px;
+    margin: 0 auto;
+    width: 80vw;
+   display: flex;
+   flex-wrap: wrap;
+   background-color: lavender;
+   justify-content: center;
+
+}
+.card{
+    padding-bottom: 40px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    margin: 20px 15px;
+    width: 270px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    box-shadow: 10px 10px 10px lightgrey;
+}
+.card:hover{
+    transform: translate(0px, -2px) scale(1.1);
+    -webkit-transform: translate(0px, -2px) scale(1.1);
+    -moz-transform: translate(0px, -2px) scale(1.1);
+    -ms-transform: translate(0px, -2px) scale(1.1);
+    -o-transform: translate(0px, -2px) scale(1.1);
+}
+img{
+    object-fit: unset;
+    width: 270px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+span.card__category{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h3.card__title{
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+button{
+    border: none;
+    margin-top: 10px;
+    background-color: blueviolet;
+    color: white;
+    padding: 20px 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: 3px 3px 3px lightgrey;
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+}
+button:hover{
+    transform: scale(1);
+    background-color: rgb(187, 145, 226);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
 }
